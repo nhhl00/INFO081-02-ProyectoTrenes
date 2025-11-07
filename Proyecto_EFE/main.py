@@ -19,8 +19,6 @@ def main():
 
 main()
 
-"hola soy renzo"
 
-"hola soy anonymous"
 
 
