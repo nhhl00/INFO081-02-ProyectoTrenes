@@ -8,7 +8,7 @@ COLOR_VENTANA = "#f5f2f4"
 
 #ui(botones):
 #ui(ventanas):
-     
+
 def main():
     root = tk.Tk()
     root.title(TITULO_VENTANA)
