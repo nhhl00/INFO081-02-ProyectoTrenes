@@ -15,11 +15,11 @@ El informe presenta el diseño de un sistema de simulación de tráfico ferrovia
 - **Vagones disponibles:** Este indicador nos indicará la cantidad de vagones disponibles según la cantidad de personas que estén en el tren.
 
 ## Almacenamiento y persistencia de datos
-Se tendra una persitencia de los archivos utilizando .json o .text. Además los archivos necesarios para correr el programa principal **"main.py"** estaran ubicados en la carpeta **"Proyecto_EFE"** junto al programa principal.
+Se tendra una persitencia de los archivos utilizando archivos de texto. Además los archivos necesarios para correr el programa principal **"main.py"** estaran ubicados en la carpeta **"Proyecto_EFE"** junto al programa principal.
 
 ## Archivos principales 
 python main.py
-para ejecutar nuestros archivos principales, los cuales tenga el nombre "main" se segurian los siguientes pasos. 
+para ejecutar nuestros archivos principales, los cuales tenga el nombre "main" se segurian los siguientes pasos 
 - abrir un terminal
 - posicionarse en la carpeta principal del proyecto
 - cd INFO081-01-ProyectoTrenes/Proyecto_EFE
