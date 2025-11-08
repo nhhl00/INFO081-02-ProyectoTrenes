@@ -1,8 +1,10 @@
 import tkinter as tk
 from tkinter import Toplevel, ttk, messagebox
 
-from config.settings_ventana import TITULO_VENTANA, DIMENSION_VENTANA, COLOR_VENTANA
 #config:
+TITULO_VENTANA = "Gestion de Trenes"
+DIMENSION_VENTANA = "800x600"
+COLOR_VENTANA = "#f5f2f4"
 
 #ui(botones):
 #ui(ventanas):
