@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import Toplevel, ttk, messagebox
-from Proyecto_EFE import SistemaDeGuardado
+from logic.SistemaDeGuardado import SistemaGuardado
 
 
 #config:
