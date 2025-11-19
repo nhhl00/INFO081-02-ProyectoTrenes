@@ -8,10 +8,10 @@ def fn_botones(parent):
 
     #Crear los botones
     boton_iniciar_simulacion = ttk.Button(frame_para_botones, text="Iniciar simulación")
-    boton_iniciar_simulacion.pack(side=tk.LEFT,padx=5)
+    boton_iniciar_simulacion.pack(side=tk.BOTTOM,padx=5)
 
     boton_cargar_simulacion = ttk.Button(frame_para_botones, text="Cargar simulación")
-    boton_cargar_simulacion.pack(side=tk.LEFT, padx=5)
+    boton_cargar_simulacion.pack(side=tk.BOTTOM, padx=5)
 
     #referencias
     return {

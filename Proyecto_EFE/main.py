@@ -1,13 +1,13 @@
 import tkinter as tk
 from tkinter import Toplevel, ttk, messagebox
-
 #config:
 from config import TITULO_VENTANA, DIMENSION_VENTANA, COLOR_VENTANA
-
 #ui(botones):
 from ui import fn_botones
-
 #ui(ventanas):
+from ui import estructura_pestaña_principal
+#clases:
+from models import *
 
 def main():
     root = tk.Tk()
@@ -15,29 +15,14 @@ def main():
     root.geometry(DIMENSION_VENTANA)
     root.configure(bg=COLOR_VENTANA)
 
-    #ui(ventana):
-    notebook = ttk.Notebook(root)
-    notebook.pack(pady=10, padx=10, fill='both', expand=True)
-
-    frame_inicio = ttk.Frame(notebook)
-    frame_simulacion = ttk.Frame(notebook)
-
-    tk.Label(frame_inicio, text="Sistema de gestion de tráfico ferroviario EFE Chile",bg="#f5f2f4",font=("Arial", 14)).pack(padx=50, pady=50)
-
-    notebook.add(frame_inicio, text="Inicio")
-    notebook.add(frame_simulacion, text="Simulación")
-
-
+    #ui(pestañas):
+    crear_frames = estructura_pestaña_principal(root)
     #ui(botones):
     crear_botones = fn_botones(root)
 
+
     root.mainloop()
 
-
-
-from models.clases import Tren
-from models.clases import Estacion
-from models.clases import Pasajero
 
 if __name__ == "__main__":
     # Crear estaciones
