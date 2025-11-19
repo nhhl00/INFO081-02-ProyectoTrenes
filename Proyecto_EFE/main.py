@@ -10,6 +10,7 @@ from ui import estructura_pestaña_principal
 from models import *
 
 def main():
+    #Iniciar programa
     root = tk.Tk()
     root.title(TITULO_VENTANA)
     root.geometry(DIMENSION_VENTANA)
@@ -19,7 +20,6 @@ def main():
     crear_frames = estructura_pestaña_principal(root)
     #ui(botones):
     crear_botones = fn_botones(root)
-
 
     root.mainloop()
 
@@ -42,7 +42,6 @@ if __name__ == "__main__":
 
     santiago.embarcar_pasajeros(tren1)
     tren1.avanzar()
-
 
 if __name__ == "__main__":
     main()
