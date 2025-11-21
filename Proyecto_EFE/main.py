@@ -21,8 +21,15 @@ def main():
     #ui(botones):
     crear_botones = fn_botones(root)
 
-    #conectar boton inicio a pestaña inicio
-    crear_botones["boton_iniciar_simulacion"].config(command=lambda: crear_frames.select(1))
+    #otorgar comandos a botones
+    crear_botones["boton_salir_simulacion"].config(command=lambda: root.destroy())
+    crear_botones["boton_configurar_simulacion"].config(command=lambda: crear_frames.select(1))
+    crear_botones["boton_iniciar_simulacion"].config(command=lambda: crear_frames.select(2))
+
+    if crear_frames == 1 or crear_frames == 2:
+        print("hola")
+
+
 
     root.mainloop()
 
