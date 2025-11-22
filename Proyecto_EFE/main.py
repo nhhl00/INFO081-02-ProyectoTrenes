@@ -5,7 +5,7 @@ from config import TITULO_VENTANA, DIMENSION_VENTANA, COLOR_VENTANA
 #ui(botones):
 from ui import fn_botones
 #ui(ventanas):
-from ui import estructura_pestaña_principal
+from ui import estructura_pestañas
 #clases:
 from models import *
 
@@ -16,19 +16,17 @@ def main():
     root.geometry(DIMENSION_VENTANA)
     root.configure(bg=COLOR_VENTANA)
 
-    #ui(pestañas):
-    crear_frames = estructura_pestaña_principal(root)
-    #ui(botones):
+    #ui(ésta{as}):
     crear_botones = fn_botones(root)
+    frame_botones = crear_botones["frame_para_botones"]
+    frame_botones.pack(side=tk.BOTTOM, pady=10, padx=10)
+    #ui(botones):
+    crear_frames = estructura_pestañas(root,frame_botones)
 
     #otorgar comandos a botones
     crear_botones["boton_salir_simulacion"].config(command=lambda: root.destroy())
     crear_botones["boton_configurar_simulacion"].config(command=lambda: crear_frames.select(1))
     crear_botones["boton_iniciar_simulacion"].config(command=lambda: crear_frames.select(2))
-
-    if crear_frames == 1 or crear_frames == 2:
-        print("hola")
-
 
 
     root.mainloop()
@@ -55,7 +53,3 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
-
-
-
-
